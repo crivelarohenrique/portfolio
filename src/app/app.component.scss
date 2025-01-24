@@ -1,0 +1,20 @@
+@use '@angular/material' as mat;
+
+mat-toolbar {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+
+.nav-btn {
+  min-width: 200px;
+  max-width: 2  00px;
+}
+
+
+.inactive-btn {
+  @include mat.button-overrides((
+    filled-container-color: rgb(0, 0, 0),
+    filled-label-text-color: rgb(255, 255, 255),
+  ));
+}
